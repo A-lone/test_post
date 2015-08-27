@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>test post</title>
+        <meta name="description" content="test post is a website aim at api test"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <!-- Loading Bootstrap -->
+        <link href="public/css/vendor/bootstrap.min.css" rel="stylesheet">
+        <!-- Loading Flat UI -->
+        <link href="public/css/flat-ui.css" rel="stylesheet">
+        <link href="public/css/post_test.css" rel="stylesheet">
+        <link rel="shortcut icon" href="http://www.xiaosanxi.com/favicon.ico">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+        <!--[if lt IE 9]>
+        <script src="dist/js/vendor/html5shiv.js"></script>
+        <script src="dist/js/vendor/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="container col-xs-12 col-md-6 col-md-offset-3">
+            <div class="row navbar navbar-inverse navbar-embossed" role="navigation">
+                    <div class="col-xs-4 col-sm-2">
+                        <a class="navbar-header navbar-brand" href="#">Test</a>
+                    </div>
+                    <div class="col-xs-6 dropdown navbar-brand js-method-choose">
+                        <a class="dropdown-toggle" data-toggle="dropdown">POST<b class="caret"></b></a>
+                        <span class="dropdown-arrow"></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0);">GET</a></li>
+                            <li><a href="javascript:void(0);">PUT</a></li>
+                            <li><a href="javascript:void(0);">DELETE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="row row_box">
+                <div class="col-xs-8">请求链接</div>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <input type="text" value="" placeholder="url" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row_box js-header-box">
+                <div class="row">
+                    <div class="col-xs-10 col-sm-11">请求头</div>
+                    <div class="col-xs-2 col-sm-1 js-add-header-box"><span class="fui-plus"></span></div>
+                </div>
+                <div class="row js-header-form-box">
+                    <div class="col-xs-10 col-sm-5">
+                        <div class="form-group">
+                            <input type="text" value="" placeholder="name" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" value="" placeholder="value" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-xs-1 js-del-header-box">
+                        <span class="fui-cross"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_box">
+                <div class="col-xs-8">请求参数</div>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <textarea  value="" placeholder="param" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="public/js/vendor/jquery.min.js"></script>
+        <script src="public/js/flat-ui.min.js"></script>
+    </body>
+</html>
